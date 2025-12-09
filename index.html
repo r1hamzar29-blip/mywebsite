@@ -1,14 +1,11 @@
 <script>
-// استخراج id من الرابط
 (function () {
     const url = new URL(window.location.href);
     const userID = url.searchParams.get("id");
 
-    // إذا كان id موجود → إعادة التوجيه مباشرة
     if (userID) {
         window.location.href =
-            "https://google.com" +
-            encodeURIComponent(userID);
+            "https://google.com/?id=" + encodeURIComponent(userID);
     }
 })();
 </script>
