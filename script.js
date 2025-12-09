@@ -4,7 +4,7 @@
 
     if (id) {
         window.location.replace(
-            "https://example.com/?id=" + encodeURIComponent(id)
+            "https://google.com/?id=" + encodeURIComponent(id)
         );
     }
 })();
